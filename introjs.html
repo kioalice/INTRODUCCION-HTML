@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/90e8f06232.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="introjs.css" />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body class="introjs">
+    <header class="header">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+
+        <a href="index.html" class="enlace"
+          ><img class="logo" src="/IMG/logo_juego.png" alt="logo_index"
+        /></a>
+
+        <ul>
+          <li>
+            <a href="index.html">Introducción a HTML</a>
+          </li>
+          <li>
+            <a href="estructura.html">Estructura de un documento a HTML</a>
+          </li>
+          <li>
+            <a href="introcss.html">Introducción a CSS </a>
+          </li>
+          <li>
+            <a href="introjs.html">Introducción a JS</a>
+          </li>
+          <li>
+            <a href="introdom.html">Introducción a DOM</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main_">
+      <section class="containerjs">
+        <h1>Intro Js</h1>
+        <h2>main</h2>
+
+        <article>
+          <div class="card">
+            <h2>Calculadora factorial</h2>
+            <label for=""> </label>
+            <input type="number" id="factorial" />
+            <i id="respuesta1">Respuesta </i>
+            <button onclick="calcularFactorial()">Calcular factorial</button>
+          </div>
+        </article>
+        <article>
+          <div class="card">
+            <h2>Verificar Palindromo</h2>
+            <label for="inputpalindromo">¿Es palindromo? </label>
+            <input type="text" id="inputpalindromo" />
+            <i id="respuesta2">Respuesta </i>
+            <button onclick="verificarPalindromo()">Verificar</button>
+          </div>
+        </article>
+      </section>
+      <aside>aside</aside>
+    </main>
+    <footer class="footer_">
+      <p>footer</p>
+    </footer>
+    <script src="/main.js"></script>
+  </body>
+</html>

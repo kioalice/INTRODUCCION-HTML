@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/IMG/logo_juego.png" />
+    <title>Introducción a CSS</title>
+    <script
+      src="https://kit.fontawesome.com/90e8f06232.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header inicio">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+
+        <a href="index.html" class="enlace"
+          ><img class="logo" src="/IMG/logo_juego.png" alt="logo_index"
+        /></a>
+
+        <ul>
+          <li>
+            <a href="index.html">Introducción a HTML</a>
+          </li>
+          <li>
+            <a href="estructura.html">Estructura de un documento a HTML</a>
+          </li>
+          <li>
+            <a href="introcss.html">Introducción a CSS </a>
+          </li>
+          <li>
+            <a href="introjs.html">Introducción a JS</a>
+          </li>
+          <li>
+            <a href="introdom.html">Introducción a DOM</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <!-- CONTENIDO DE LA CAJA -->
+        <article class="content-content-box"><div>cajita de box</div></article>
+        <article>
+          <p>parrafo</p>
+          <p class="myp back">otro parrafooo</p>
+          <p class="myp">más parraaaaaafooos</p>
+          <p id="myp" class="myp">No me canso de los parrafos</p>
+          <p class="myp color-rojo-back-azul">ultimo parrafo al fin</p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <!-- Estilo en línea -->
+          <div class="div-ejemplo-embebido" style="background-color: lightpink">
+            So easyyyyyyyyy ( soy ese)
+          </div>
+        </article>
+        <!-- EJEMPLO DE MODELO DE CAJA -->
+        <article>
+          <div class="contenedor">
+            <div class="contenido">Contenidoo</div>
+          </div>
+        </article>
+        <!-- Ejemplo de modelo de caja con imagen -->
+        <article>
+          <div class="contenedor-con-imagen">
+            <div class="contenido-con-imagen">Contenido con imagen</div>
+          </div>
+        </article>
+        <!-- SELECTORES -->
+        <article class="contenedor-parrafo">
+          <div class="contenedor-parrafo">
+            <h1>este es el título del párrafo</h1>
+            <p>Este es un <span> párrafo</span></p>
+          </div>
+        </article>
+        <section>
+          <h2>Estilos más usados</h2>
+          <article>
+            <div class="container">
+              <div class="content">
+                <p>Párrafo</p>
+                <h3>Este es un detalle</h3>
+                <div class="mydiv">
+                  <div class="div-in-mydiv"></div>
+                  <div class="div-in-mydiv-2"></div>
+                  <div class="div-in-mydiv-3"></div>
+                </div>
+                <div class="tamano">
+                  <div class="tamano-hijo">sss</div>
+                </div>
+                <div class="div-vh-vw">100vh - 100v-w</div>
+                <div class="punto">100pt</div>
+                <div class="div-rem">20rem</div>
+                <div class="div-em">20em</div>
+                <div class="_contenedor">
+                  Contenedor
+                  <div class="_contenido">
+                    contenido
+                    <div class="_otrocontenido">Otro contenido</div>
+                    <div class="contenido_grande">Contenido grande</div>
+                  </div>
+                </div>
+                <div class="contenedor-de-bordes">
+                  <div class="borde-1" id="borde-1"></div>
+                  <div class="borde-2"></div>
+                  <div class="borde-3"></div>
+                  <div class="borde-4"></div>
+                  <div class="borde-6"></div>
+                </div>
+                <div class="borde-en-una-linea"></div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+      <section>
+        <article class="content-d-flex">
+          <h2>Display Flex</h2>
+          <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+          </div>
+
+          <h2>Contenido perfectamente centrados</h2>
+          <div class="contenedor-perfecto">
+            <div class="contenido-perfecto">perfecto</div>
+          </div>
+          <h2>Elementos hijos de flex</h2>
+          <div class="flex-container-2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <h2>Flex-shrink</h2>
+          <div class="flex-container-3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Display Grid (Css Layout)</h2>
+          <h3>Template Columns</h3>
+
+          <div class="container-grid grid-columns">
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+          </div>
+          <h3>Template Rows</h3>
+          <div class="container-grid grid-rows">
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+          </div>
+
+          <h3 class="title3">Template Rows & Columns</h3>
+          <div class="container-grid grid-rows-columns">
+            <div class="item primero">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article>
+          <div class="container-grid estructura">
+            <div class="_header">Header</div>
+            <div class="_sidelbar">Sidelbar</div>
+            <div class="_main">Main</div>
+            <div class="_footer">Footer</div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Responsividad usando grid</h2>
+          <div class="responsivo">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Realizado por Camila Rifo derechos reservados 2023 &copy;</p>
+    </footer>
+  </body>
+</html>
