@@ -137,10 +137,10 @@ main section .articulo img {
 }
 
 .no-webp .inicio {
-  background-image: url(../img/header.jpg);
+  background-image: url(./IMG/header.jpg);
 }
 .webp .inicio {
-  background-image: url(../img/header.webp);
+  background-image: url(./img/header.webp);
 }
 
 .inicio {
@@ -158,15 +158,15 @@ main section .articulo img {
 @keyframes inicio {
   0%,
   33% {
-    background-image: url(../img/header.jpg);
+    background-image: url(./img/header.jpg);
   }
   34%,
   66% {
-    background-image: url(../img/header2.jpg);
+    background-image: url(./img/header2.jpg);
   }
   67%,
   100% {
-    background-image: url(../img/header3.jpg);
+    background-image: url(./img/header3.jpg);
   }
 }
 
